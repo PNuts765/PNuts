@@ -106,64 +106,7 @@
         <div class="title">PNuTs Premium Streetwear</div>
         <div style="font-size:12px;color:var(--muted)">Step into Style. Step into Power.</div>
       </div>
-     <!-- Limited Drops Carousel -->
-<section id="limited">
-  <h2>🔥 Limited Drops</h2>
-  <div class="carousel">
-    <div class="carousel-track">
-      <!-- Product cards will be injected here -->
-    </div>
-  </div>
-</section>
-
-<script>
-  const limitedDrops = [
-    {
-      title: "Travis Scott x Air Jordan 1 Low OG SP 'Reverse Mocha'",
-      img: "https://images.nike.com/is/image/DotCom/553558_285_A_PREM?$NikePDP$",
-      desc: "Highly sought-after collaboration with unique colorway.",
-      link: "https://www.amazon.com/dp/B0D944MP8V?tag=pnut20-20"
-    },
-    {
-      title: "Yeezy Boost 350 V2 'Salt'",
-      img: "https://images.adidas.com/is/image/adidas/yeezy-boost-350-v2-salt.jpg",
-      desc: "Minimalist design with a neutral tone.",
-      link: "https://www.amazon.com/dp/B0BPDQ6P3F?tag=pnut20-20"
-    }
-  ];
-
-  const carouselTrack = document.querySelector('.carousel-track');
-
-  limitedDrops.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
-    card.innerHTML = `
-      <img src="${product.img}" alt="${product.title}">
-      <h3>${product.title}</h3>
-      <p>${product.desc}</p>
-      <a href="${product.link}" target="_blank" class="shop">Shop Now</a>
-    `;
-    carouselTrack.appendChild(card);
-  });
-
-  let scrollPosition = 0;
-  const scrollAmount = 300; // Adjust this value to control the scroll speed
-
-  function autoScrollCarousel() {
-    scrollPosition += scrollAmount;
-    if (scrollPosition >= carouselTrack.scrollWidth) {
-      scrollPosition = 0;
-    }
-    carouselTrack.scrollTo({
-      left: scrollPosition,
-      behavior: 'smooth'
-    });
-  }
-
-  setInterval(autoScrollCarousel, 3000); // Scroll every 3 seconds
-</script>
-
-
+  
     </div>
     <nav aria-label="Main navigation">
       <a href="#jordans">Jordans</a>
@@ -239,4 +182,5 @@ for(const section in data){
 </body>
 
 </html>
+
 
