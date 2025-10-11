@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PNuTs Premium Streetwear — Step into Style. Step into Power.</title>
+<meta name="description" content="PNuTs Premium Streetwear: Jordans, Nike Air Force 1, Timberlands, and exclusive limited drops.">
+<style>
+:root{
+  --bg:#0f0f10;
+  --muted:#ddd;
+  --accent:#1de9b6;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  color:#eee;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:url('https://images.unsplash.com/photo-1583454110551-fd10aa9e6502?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  mix-blend-mode:screen;
+  pointer-events:none;
+  opacity:0.9;
+  filter:contrast(1.1) saturate(1.2);
+}
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(5,5,6,0.6);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.navwrap{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px;
+}
+.brand{display:flex;gap:12px;align-items:center;}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,#ff6b3d,#ffd166);display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;}
+.title{font-size:16px;font-weight:700;letter-spacing:0.6px;}
+nav a{color:#ddd;text-decoration:none;margin:0 12px;font-weight:600;}
+nav a:hover{color:var(--accent);}
+main{max-width:1100px;margin:18px auto;padding:0 16px 80px;}
+section{margin-top:28px;}
+section h2{color:#fff;margin:6px 0 14px;font-size:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:10px;
+  padding:12px;
+  border:1px solid rgba(255,255,255,0.03);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  transition:transform .16s ease,box-shadow .16s ease;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+.card img{width:100%;height:170px;object-fit:contain;border-radius:8px;background:#0b0b0b;padding:8px;}
+.card h3{font-size:14px;margin:10px 0 6px;color:#fff;text-align:center;}
+.card .meta{color:var(--muted);font-size:13px;margin-bottom:8px;}
+.shop{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:700;
+}
+footer{max-width:1100px;margin:30px auto;color:var(--muted);text-align:center;padding:20px 16px;}
+@media(max-width:720px){
+  .card img{height:150px;}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="navwrap">
+    <div class="brand">
+      <div class="logo">PN</div>
+      <div>
+        <div class="title">PNuTs Premium Streetwear</div>
+        <div style="font-size:12px;color:#ddd">Step into Style. Step into Power.</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#jordans">Jordans</a>
+      <a href="#af1">Air Force 1</a>
+      <a href="#timberland">Timberland</a>
+      <a href="#limited">Limited Drops</a>
+    </nav>
+  </div>
+</header>
+<main id="products"></main>
+<footer>
+  <div>© 2025 PNuTs Premium Streetwear — As an Amazon Associate we earn from qualifying purchases.</div>
+</footer>
+<script>
+const data = {
+  "jordans":[
+    {"title":"Air Jordan 1 Retro High OG 'Chicago/Lost and Found'","img":"images/B0BMKWHXKZ.jpg","desc":"Iconic red, white, and black colorway.","link":"https://www.amazon.com/dp/B0BMKWHXKZ?tag=pnut-20"},
+    {"title":"Air Jordan 1 Retro High OG 'University Blue'","img":"images/B0CLZ8R1P8.jpg","desc":"Classic UNC-inspired colorway.","link":"https://www.amazon.com/dp/B0CLZ8R1P8?tag=pnut-20"},
+    {"title":"Air Jordan 1 Retro High OG 'Bred Patent'","img":"images/B0752TVT14.jpg","desc":"Patent leather finish with classic color blocking.","link":"https://www.amazon.com/dp/B0752TVT14?tag=pnut-20"}
+  ],
+  "af1":[
+    {"title":"Nike Air Force 1 '07 Low","img":"images/B01HK4Y3KG.jpg","desc":"Timeless white-on-white silhouette.","link":"https://www.amazon.com/dp/B01HK4Y3KG?tag=pnut-20"}
+  ],
+  "timberland":[
+    {"title":"Timberland 6-Inch Premium Waterproof Boot","img":"images/B0DLKJFCNV.jpg","desc":"Durable and iconic boot for all seasons.","link":"https://www.amazon.com/dp/B0DLKJFCNV?tag=pnut-20"}
+  ],
+  "limited":[
+    {"title":"Travis Scott x Air Jordan 1 Low OG SP 'Reverse Mocha'","img":"images/B0D944MP8V.jpg","desc":"Highly sought-after collaboration with unique colorway.","link":"https://www.amazon.com/dp/B0D944MP8V?tag=pnut-20"},
+    {"title":"Yeezy Boost 350 V2 'Salt'","img":"images/B0BPDQ6P3F.jpg","desc":"Minimalist design with a neutral tone.","link":"https://www.amazon.com/dp/B0BPDQ6P3F?tag=pnut-20"}
+  ]
+};
+
+const mainEl=document.getElementById('products');
+for(const section in data){
+  const secEl=document.createElement('section');secEl.id=section;
+  const h2=document.createElement('h2');h2.textContent=section.charAt(0).toUpperCase()+section.slice(1);secEl.appendChild(h2);
+  const grid=document.createElement('div');grid.className='grid';
+  data[section].forEach(p=>{
+    const card=document.createElement('div');card.className='card';
+    card.innerHTML=`<img src="${p.img}" alt="${p.title}"><h3>${p.title}</h3><div class="meta">${p.desc}</div><a href="${p.link}" target="_blank" class="shop">Shop Now</a>`;
+    grid.appendChild(card);
+  });
+  secEl.appendChild(grid);mainEl.appendChild(secEl);
+}
+</script>
+</body>
+</html>
