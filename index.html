@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PNuTs Premium Streetwear — Step into Style. Step into Power.</title>
+<meta name="description" content="PNuTs Premium Streetwear: curated Jordans, Nike Air Force 1, BAPE, Timberland, and limited drops. Shop top sneaker releases with Amazon affiliate links." />
+<style>
+:root{
+  --bg:#0f0f10;
+  --muted:#ddd;
+  --accent:#1de9b6;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#eee;background:var(--bg);-webkit-font-smoothing:antialiased;}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:url('https://images.unsplash.com/photo-1583454110551-fd10aa9e6502?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  mix-blend-mode:screen;
+  pointer-events:none;
+  opacity:0.9;
+  filter:contrast(1.1) saturate(1.2);
+}
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(5,5,6,0.6);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.navwrap{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px;
+}
+.brand{display:flex;gap:12px;align-items:center;}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,#ff6b3d,#ffd166);display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;}
+.title{font-size:16px;font-weight:700;letter-spacing:0.6px;}
+nav a{color:#ddd;text-decoration:none;margin:0 12px;font-weight:600;}
+nav a:hover{color:var(--accent);}
+.hero{
+  max-width:1100px;
+  margin:28px auto;
+  padding:28px;
+  border-radius:12px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.hero .left{flex:1;}
+.hero h1{margin:0;font-size:28px;color:#fff;}
+.hero p{color:var(--muted);margin-top:8px;}
+.hero .cta{margin-top:14px;display:inline-block;padding:10px 16px;border-radius:999px;background:var(--accent);color:#111;text-decoration:none;font-weight:700;}
+main{max-width:1100px;margin:18px auto;padding:0 16px 80px;}
+section{margin-top:28px;}
+section h2{color:#fff;margin:6px 0 14px;font-size:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:10px;
+  padding:12px;
+  border:1px solid rgba(255,255,255,0.03);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  transition:transform .16s ease,box-shadow .16s ease;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+.card img{width:100%;height:170px;object-fit:contain;border-radius:8px;background:#0b0b0b;padding:8px;}
+.card h3{font-size:14px;margin:10px 0 6px;color:#fff;text-align:center;}
+.card .meta{color:var(--muted);font-size:13px;margin-bottom:8px;}
+.shop{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:700;
+}
+footer{max-width:1100px;margin:30px auto;color:var(--muted);text-align:center;padding:20px 16px;}
+.carousel{overflow-x:auto;white-space:nowrap;scroll-behavior:smooth;}
+.carousel-track{display:flex;gap:14px;}
+.carousel .card{flex:0 0 auto;width:220px;}
+@media(max-width:720px){
+  .hero{flex-direction:column;align-items:flex-start;}
+  .navwrap{padding:10px;}
+  .hero h1{font-size:20px;}
+  .card img{height:150px;}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="navwrap">
+    <div class="brand">
+      <div class="logo">PN</div>
+      <div>
+        <div class="title">PNuTs Premium Streetwear</div>
+        <div style="font-size:12px;color:var(--muted)">Step into Style. Step into Power.</div>
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#jordans">Jordans</a>
+      <a href="#af1">Air Force 1</a>
+      <a href="#bape">BAPE</a>
+      <a href="#timberland">Timberland</a>
+      <a href="#limited">Limited Drops</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="left">
+      <h1 id="hero-title">PNuTs Premium Streetwear</h1>
+      <p>Curated Jordans, Nike Air Force 1, BAPE, Timberland, and limited drops — top releases and best sellers, handpicked.</p>
+      <a class="cta" href="#jordans">Shop Jordans</a>
+    </div>
+    <div style="width:320px;text-align:center">
+      <img src="https://images.nike.com/is/image/DotCom/555088_610_A_PREM?$NikePDP$" alt="sneaker hero" style="width:280px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.6)">
+    </div>
+  </section>
+
+  <main id="products"></main>
+
+  <footer>
+    <div>© 2025 PNuTs Premium Streetwear — As an Amazon Associate we earn from qualifying purchases.</div>
+  </footer>
+
+<script>
+const data = {
+  "jordans": [
+    {"title":"Air Jordan 1 Retro High OG 'Chicago/Lost and Found'","img":"https://images.nike.com/is/image/DotCom/555088_610_A_PREM?$NikePDP$","desc":"Iconic red, white, and black colorway.","link":"https://www.amazon.com/dp/B0BMKWHXKZ?tag=pnut20-20"},
+    {"title":"Air Jordan 1 Retro High OG 'University Blue'","img":"https://images.nike.com/is/image/DotCom/555088_134_A_PREM?$NikePDP$","desc":"Classic UNC-inspired colorway.","link":"https://www.amazon.com/dp/B0CLZ8R1P8?tag=pnut20-20"},
+    {"title":"Air Jordan 1 Retro High OG 'Bred Patent'","img":"https://images.nike.com/is/image/DotCom/555088_062_A_PREM?$NikePDP$","desc":"Patent leather finish with classic color blocking.","link":"https://www.amazon.com/dp/B08XYZ1234?tag=pnut20-20"}
+  ],
+  "af1": [
+    {"title":"Nike Air Force 1 '07 Low","img":"https://images.nike.com/is/image/DotCom/315122_111_A_PREM?$NikePDP$","desc":"Timeless white-on-white silhouette.","link":"https://www.amazon.com/dp/B01HK4Y3KG?tag=pnut20-20"}
+  ],
+  "bape": [
+    {"title":"BAPE STA Low","img":"https://images.bape.com/is/image/Bape/bape-sta-low.jpg","desc":"Streetwear classic with signature star design.","link":"https://www.amazon.com/dp/B07Y5J8X9H?tag=pnut20-20"}
+  ],
+  "timberland": [
+    {"title":"Timberland 6-Inch Premium Waterproof Boot","img":"https://images.timberland.com/is/image/TBL/shoes/6-inch-premium-boot.jpg","desc":"Durable and iconic boot for all seasons.","link":"https://www.amazon.com/dp/B00I8BJH4Y?tag=pnut20-20"}
+  ],
+  "limited": [
+    {"title":"Travis Scott x Air Jordan 1 Low OG SP 'Reverse Mocha'","img":"https://images.nike.com/is/image/DotCom/553558_285_A_PREM?$NikePDP$","desc":"Highly sought-after collaboration with unique colorway.","link":"https://www.amazon.com/dp/B0D944MP8V?tag=pnut20-20"},
+    {"title":"Yeezy Boost 350 V2 'Salt'","img":"https://images.adidas.com/is/image/adidas/yeezy-boost-350-v2-salt.jpg","desc":"Minimalist design with a neutral tone.","link":"https://www.amazon.com/dp/B0BPDQ6P3F?tag=pnut20-20"}
+  ]
+};
+
+const mainEl = document.getElementById('products');
+for(const section in data){
+  const secEl = document.createElement('section');
+  secEl.id = section;
+  const h2 = document.createElement('h2');
+  h2.textContent = section.charAt(0).toUpperCase() + section.slice(1);
+  secEl.appendChild(h2);
+  const grid = document.createElement('div');
+  grid.className='grid';
+  data[section].forEach(p=>{
+    const card=document.createElement('div');card.className='card';
+    card.innerHTML=`<img src="${p.img}" alt="${p.title}"><h3>${p.title}</h3><div class="meta">${p.desc}</div><a href="${p.link}" target="_blank" class="shop">Shop Now</a>`;
+    grid.appendChild(card);
+  });
+  secEl.appendChild(grid);
+  mainEl.appendChild(secEl);
+}
+
+// Auto-scrolling Limited Drops
+const limitedTrack = document.createElement('div');
+limitedTrack.className='carousel-track';
+data['limited'].forEach(p=>{
+  const c=document.createElement('div');c.className='card';
+  c.innerHTML=`<img src="${p.img}" alt="${p.title}"><h3>${p.title}</h3><p>${p.desc}</p><a href="${p.link}" target="_blank" class="shop">Shop Now</a>`;
+  limitedTrack.appendChild(c);
+});
+const limitedSec=document.getElementById('limited')||document.createElement('section');
+limitedSec.id='limited';
+const h2=document.createElement('h2');h2.textContent='Limited Drops 🔥';
+limitedSec.appendChild(h2);
+const wrapper=document.createElement('div');wrapper.className='carousel';wrapper.appendChild(limitedTrack);
+limitedSec.appendChild(wrapper);
+mainEl.appendChild(limitedSec);
+let pos=0;const amt=240;
+function scrollCarousel(){pos+=amt;if(pos>=limitedTrack.scrollWidth)pos=0;limitedTrack.scrollTo({left:pos,behavior:'smooth'});}
+setInterval(scrollCarousel,3000);
+</script>
+</body>
+</html>
